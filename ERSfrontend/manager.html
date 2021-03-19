@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Manager Homepage</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class = "container">
+		<div class = "row company-name">
+			<h1>Manager page</h1>
+		</div>
+		<div class = "row">
+			<div class="col-md-2 side-menu">
+				<h6 id="welcome-emp-name"></h6>
+				<button type="button" class="btn btn-danger menu-btn" id="logout-btn" onclick="logout()">Logout</button>
+				<button type="button" class="btn btn-info menu-btn" id="reimb-emp-id-btn">Reimbursement ID</button>
+			</div>
+  			<div class="col-md-10">
+
+				<!-- edit reimbursement div -->
+	            <div id="reimb-edit">
+	            	<h4>Approve/Deny Reimbursement</h4>
+	            	<table id="reimb-edit-table" class="table table-hover">
+						<tr>
+							<th>ID</th>
+							<th>Employee ID</th>
+							<th>Amount</th>
+							<th>Reason</th>
+							<th>Date</th>
+							<th>Status</th>
+							<th>Approve</th>
+							<th>deny</th>
+
+						</tr>
+						<tr >
+							<td>1</td>
+							<td>1</td>
+							<td>150</td>
+							<td>Food</td>
+							<td>01022021</td>
+                            <td id="reimb-select-status">
+							Pending	
+							</td>
+							<td class="reimb-row-btn">
+								<button id="approve-btn" class="btn btn-success reimb-submit-btn">Approve</button>
+							</td>
+							<td class="reimb-row-btn">
+								<button style="background-color: rgb(224, 100, 100);" id="deny-btn" class="btn btn-success reimb-submit-btn">Deny</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+			
+				<!-- search button reimbursement by emp id div-->
+				<div class="row" id="reimb-emp-search-div" hidden=true>
+	            	<div class="col-sm-12" id="section-name">
+						<h4>Reimbursement by ID</h4>
+					</div>
+					<div class="col-sm-12">
+						<label>Expense ID: </label>
+						<input type="number" id="reimb-emp-id-input">
+						<button type="button" class="btn btn-info" id="reimb-emp-btn">Search</button>
+					</div>
+				</div>
+				<!-- reimbursement by emp id table-->
+				<div id="reimb-emp-table-div" hidden=true>
+	            	<table id="reimb-emp-table" class="table table-hover">
+						<tr>
+							<th>ID</th>
+							<th>Amount</th>
+							<th>Purpose</th>
+							<th>Approve By</th>
+							<th>Status</th>
+						</tr>
+					</table>
+	            </div>
+
+			  </div>
+		</div>
+	</div>
+	<footer class="page-footer">
+		<p>About Us</p>
+		<p>Contacts</p>
+		<p></p>
+	</footer>
+	
+<script type="text/javascript" src="manager.js"></script>
+</body>
+</html>
