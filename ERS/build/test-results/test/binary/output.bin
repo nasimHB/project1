@@ -1,0 +1,5 @@
+«Expense{expenseId=1, amount=100, employeeReason='refund', status='pending', dateSubmitted=1615824802157, dateReviewed=0, managerReason='null', employeeId=1, managerId=0}
+«Expense{expenseId=1, amount=100, employeeReason='refund', status='pending', dateSubmitted=1615824802157, dateReviewed=0, managerReason='null', employeeId=1, managerId=0}
+­[Expense{expenseId=1, amount=100, employeeReason='refund', status='pending', dateSubmitted=1615824802157, dateReviewed=0, managerReason='null', employeeId=1, managerId=0}]
+¿Expense{expenseId=1, amount=100, employeeReason='refund', status='approved', dateSubmitted=1615824802157, dateReviewed=1615824802204, managerReason='cuz im nice', employeeId=1, managerId=1}
+½Expense{expenseId=1, amount=100, employeeReason='refund', status='denied', dateSubmitted=1615824802157, dateReviewed=1615824802210, managerReason='cuz im mean', employeeId=1, managerId=1}
